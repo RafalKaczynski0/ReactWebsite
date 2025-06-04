@@ -1,13 +1,108 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body 
+{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+header 
+{
+    background-color: #c00;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-size: 1.5rem;
+}
+header h1 
+{
+    margin: 0;
+}
+nav 
+{
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a 
+{
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+nav a:hover 
+{
+    background: #c00;
+}
+.container 
+{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+section 
+{
+    margin-bottom: 30px;
+}
+footer 
+{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+}
+footer p 
+{
+    margin: 0;
+}
+.image-container img 
+{
+    width: 100%;
+    height: auto;
+    max-width: 800px; 
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+.gallery 
+{
+    display: flex;           
+    gap: 15px;              
+    justify-content: space-between; 
+}
+.gallery img 
+{
+    width: calc(33.33% - 10px); 
+    height: auto;
+    object-fit: cover;      
+    border-radius: 5px;
+}
+.section-content 
+{
+    display: flex;
+    gap: 20px;
+}
+.section-content .left-column 
+{
+    flex: 2;
+}
+.section-content .right-column 
+{
+    flex: 1;
 }

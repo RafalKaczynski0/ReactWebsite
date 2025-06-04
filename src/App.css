@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body 
+{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header 
+{
+    background-color: #c00;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-size: 1.5rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header h1 
+{
+    margin: 0;
 }
-
-.App-link {
-  color: #61dafb;
+nav 
+{
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav a 
+{
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+nav a:hover 
+{
+    background: #c00;
+}
+.container 
+{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+section 
+{
+    margin-bottom: 30px;
+}
+footer 
+{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+}
+footer p 
+{
+    margin: 0;
+}
+.image-container img 
+{
+    width: 100%;
+    height: auto;
+    max-width: 800px; 
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+.gallery 
+{
+    display: flex;           
+    gap: 15px;              
+    justify-content: space-between; 
+}
+.gallery img 
+{
+    width: calc(33.33% - 10px); 
+    height: auto;
+    object-fit: cover;      
+    border-radius: 5px;
+}
+.section-content 
+{
+    display: flex;
+    gap: 20px;
+}
+.section-content .left-column 
+{
+    flex: 2;
+}
+.section-content .right-column 
+{
+    flex: 1;
 }
